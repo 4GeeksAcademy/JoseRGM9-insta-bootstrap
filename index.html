@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bb5670fca2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i> Instagram
+          </a>               
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Create a New Post
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Create a New Post</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>                    
+                    </div>
+                    <div class="modal-body">
+                      <div class="form-group">
+                        <label for="message-text" class="col-form-label font-weight-bold">Caption:</label>
+                        <textarea class="form-control mb-2" id="message-text"></textarea>
+                        <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute."><i class="fa-solid fa-camera"></i></a>
+                        <a href="#" role="button" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute."><i class="fa-solid fa-location-dot"></i></a>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+              <div class="dropdown p-1">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-gear"></i>
+                </button>                          
+                <div class="dropdown-menu dropdown-menu-right">
+                  <button class="dropdown-item" type="button">Profile</button>
+                  <button class="dropdown-item" type="button">Accesibility</button>
+                  <button class="dropdown-item" type="button">Privacy and Data</button>
+                  <div class="dropdown-divider"></div>
+                   <a class="dropdown-item" href="#">Log Out</a>
+                  </div>
+                </div>
+              </div>
+            </div>       
+        </div>
+    </nav>
+    
+    <div class="container-fluid mt-3">
+      <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="container-fluid">
+            <div class="row mb-4">
+              <div class="col">
+                <img src="https://img.freepik.com/foto-gratis/pesas-ejercicio-mancuernas-hierro-placas-extra_1423-223.jpg?w=1380&t=st=1708018401~exp=1708019001~hmac=87c4517a10685e949278ff494518ea44139b973c99b8be41e3f68e5ba45e6d42" class="w-100 h-100">
+              </div>
+              <div class="col">
+                <img src="https://img.freepik.com/foto-gratis/concepto-levantamiento-pesas-mancuernas-alto-angulo_23-2149267001.jpg?w=1380&t=st=1708019069~exp=1708019669~hmac=f54fcf260fd1da457d20e2add1a1620f9716d535e068207f88ec7185020b2750" class="w-100 h-100">
+              </div>
+              <div class="col">
+                <img src="https://img.freepik.com/foto-gratis/pesas-diferentes-pesos_1203-2054.jpg?w=1380&t=st=1708019143~exp=1708019743~hmac=749a562b4dbf774db356e82a2cf197fa643d47c6410de1147e212b0d54dc0ed4" class="w-100 h-100">
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col">
+                <img src="https://img.freepik.com/foto-gratis/vista-aerea-distrito-eixample-barcelona-espana_1398-4641.jpg?w=1380&t=st=1708019223~exp=1708019823~hmac=6aacc2aeb1cabaed6bd3a2dc87b3718e852e437ccf0f38285ed4f328800135bd" class="w-100 h-100">
+              </div>
+              <div class="col">
+                <img src="https://img.freepik.com/foto-gratis/vista-aerea-barcelona-mar_1398-4635.jpg?w=1380&t=st=1708019325~exp=1708019925~hmac=df364695199ed5a52a4fee35a08b3c2089d3fd3e24431f4cf01fa3223564d703" class="w-100 h-100">
+              </div>
+              <div class="col">
+                <img src="https://img.freepik.com/foto-gratis/vista-parque-guell-invierno-barcelona_1398-4411.jpg?w=1380&t=st=1708019398~exp=1708019998~hmac=7072d5950f9bf4d2ceb27fb0f2c99fe36dab42cfae27ba31b6b657942af0b704" class="w-100 h-100">
+              </div>
+            </div>
+            <div class="row mb-4">
+              <div class="col">
+                <img src="https://img.freepik.com/fotos-premium/museo-nacional-barcelona-placa-espanya-espana_501530-4518.jpg?w=1380" class="w-100 h-100">
+              </div>
+              <div class="col">
+                <img src="https://img.freepik.com/foto-gratis/plaza-espana-torres-venecianas-palacio-nacional-maraton-barcelona_1268-19444.jpg?w=1380&t=st=1708024286~exp=1708024886~hmac=61305132bd636708db1428b210a4a39349d985fb63a45d5205003f2fa23de8d0" class="w-100 h-100">
+              </div>
+              <div class="col">
+                <img src="https://img.freepik.com/fotos-premium/arc-triomf-o-arco-triunfo-es-arco-triunfo-ciudad-barcelona-region-cataluna-espana_78361-6278.jpg?w=1380" class="w-100 h-100">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="card mx-auto mb-4" style="width: 40rem;">
+            <div class="card-body p-2">
+              <div class="float-right">
+                <p>02/24</p>
+              </div>            
+              <p class="card-text font-weight-bold">El Hotel W</p>
+            </div>
+            <img src="https://img.freepik.com/foto-gratis/vista-aerea-barcelona-mar_1398-4635.jpg?w=1380&t=st=1708019325~exp=1708019925~hmac=df364695199ed5a52a4fee35a08b3c2089d3fd3e24431f4cf01fa3223564d703">
+            <div class="card-body p-2">
+              <p class="card-text font-weight-bold mb-0">1000 Likes</p>
+              <p class="card-text mb-3">El hotel mas famoso de barcelona.</p>
+            </div>
+          </div>
+          <div class="card mx-auto mb-4" style="width: 40rem;">
+            <div class="card-body p-2">
+              <div class="float-right">
+                <p>02/24</p>
+              </div> 
+              <p class="card-text font-weight-bold">El Park Guell</p>
+            </div>
+            <img src="https://img.freepik.com/foto-gratis/vista-parque-guell-invierno-barcelona_1398-4411.jpg?w=1380&t=st=1708019398~exp=1708019998~hmac=7072d5950f9bf4d2ceb27fb0f2c99fe36dab42cfae27ba31b6b657942af0b704">
+            <div class="card-body p-2">
+              <p class="card-text font-weight-bold mb-0">2000 Likes</p>
+              <p class="card-text mb-3">Uno de los parques mas bonitos para el turismo en barcelona.</p>
+            </div>
+          </div>
+          <div class="card mx-auto mb-4" style="width: 40rem;">
+            <div class="card-body p-2">
+              <div class="float-right">
+                <p>02/24</p>
+              </div>
+              <p class="card-text font-weight-bold">El Arco del triunfo</p>
+            </div>
+            <img src="https://img.freepik.com/fotos-premium/arc-triomf-o-arco-triunfo-es-arco-triunfo-ciudad-barcelona-region-cataluna-espana_78361-6278.jpg?w=1380">
+            <div class="card-body p-2">
+              <p class="card-text font-weight-bold mb-0">3000 Likes</p>
+              <p class="card-text mb-3">Uno de los arcos mas importantes del mundo.</p>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>
